@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'mina'
 gem 'mina-puma', :require => false
 
-gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
