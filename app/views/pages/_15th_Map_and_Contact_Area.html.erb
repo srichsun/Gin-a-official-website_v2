@@ -1,0 +1,104 @@
+<!-- Start: Map and Contact Area
+=============================== -->
+<section id="map_contact">
+    
+    <!-- Start: Contact -->
+    <div class="container">
+        <div class="contact-maps-row row section-separator">
+            <div class="col-xs-12"  id="map-btn-tab" >
+                            
+                <!-- Contact Us Body -->
+                <div class="contact-maps-box wow fadeInLeft">
+                    
+                    <!-- Contact Us Headline -->
+                    <h2 class="section-heading">Contact Us</h2>
+                    
+                    <div class="col-sm-12 col-md-6" >
+                        <div class="row">
+                            <!-- Start: #contact  -->
+                            <%= form_tag contact_path, method: :post, id: :contact, remote: true do %>
+                              <!-- Contact Form Headline -->
+                              <!-- <p><strong>Contact form:</strong></p> -->
+
+                              <!-- Contact Form Field -->
+                              <div class="form-group">
+                                  <%= text_field_tag :name, 
+                                                     nil, 
+                                                     id: "contact-name", 
+                                                     name: "name", 
+                                                     class: "form-control placeholder form-cus", 
+                                                     placeholder: "Your Name" %>
+                              </div>
+
+                              <div class="form-group">
+                                  <%= text_field_tag :email, 
+                                                     nil, 
+                                                     id: "contact-email", 
+                                                     name: "email", 
+                                                     class: "form-control placeholder form-cus", 
+                                                     placeholder: "Email Address" %>
+                              </div>
+
+                              <div class="form-group">
+                                  <%= text_area_tag :message, 
+                                                    nil, 
+                                                    id: "contact-message", 
+                                                    name: "message", 
+                                                    class: "form-control placeholder form-cus", 
+                                                    placeholder: "Message", 
+                                                    rows: "5" %>
+                              </div>
+                             
+                              <div class="message col-md-12">
+                                  <p class="email-success"><i class="fa fa-check"></i> Your quote has successfully been sent.</p>
+                                  <p class="email-failed"><i class="fa fa-close"></i> Something went wrong!</p>
+                              </div>                             
+                              
+                              <div class="form-group">
+                                  <%= button_tag("Submit", class: "btn btn-1 btn-top-fill") %>
+                              </div>
+                            <% end %>
+                            <!-- End: #contact  -->
+                        </div>
+                    </div>
+
+
+                    
+                    <!-- Start: .contact-us-left  -->
+                    <div class="col-sm-12 col-md-5 col-md-offset-1 contact-us-left">
+                        <div class="row">
+
+                            <!-- Address Goes Here -->
+                            <address class="contact-address margin-b25">
+                                <strong>Finiti Headoffice 1:</strong>
+                                <ul class="address-ul">
+                                    <li><span class="bold"><i class="fa fa-home"></i>Address:&nbsp;</span> Finiti, one caspian point, pierhead street cardiff waterside, cf10 4dq</li>
+                                    <li><span class="bold"><i class="fa fa-phone"></i>Contact:&nbsp;</span><a href="callto:+8801771299299">+880 177 129 9299</a></li>
+                                    <li><span class="bold"><i class="fa fa-fax"></i>Mail:&nbsp;</span><a href="mailto:contact@deviserweb.com">contact@deviserweb.com</a></li>
+                                </ul>
+                            </address> 
+                            <address class="contact-address margin-b25">
+                                <strong>Finiti Headoffice 2:</strong>
+                                <ul class="address-ul">
+                                    <li><span class="bold"><i class="fa fa-home"></i>Address:&nbsp;</span> Finiti, one caspian point, pierhead street cardiff waterside, cf10 4dq</li>
+                                    <li><span class="bold"><i class="fa fa-phone"></i>Contact:&nbsp;</span><a href="callto:+8801742031080">+880 174 203 92991080a></li>
+                                    <li><span class="bold"><i class="fa fa-fax"></i>Mail:&nbsp;</span><a href="mailto:santush@deviserweb.com">santush@deviserweb.com</a></li>
+                                </ul>
+                            </address> 
+                            <!-- End: address -->
+                        </div>
+                    </div> 
+                    <!-- End: .contact-us-left  -->
+                </div>
+                <!-- End: .contact-maps-box -->
+                
+            </div> 
+        </div> 
+        <!-- End: .contact-maps-row .row -->
+    </div> 
+    <!-- End: .container -->
+    <!-- End: Contact -->
+
+</section>
+<!-- End: Map and Contact Area
+=============================== -->
