@@ -21,3 +21,8 @@
 /public/uploads/*
 public/assets/ # precompile的檔案
 /config/deploy.rb
+
+# Ignore Capistrano files
+Capfile
+config/deploy.rb
+config/deploy/*.rb
