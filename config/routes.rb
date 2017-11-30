@@ -5,7 +5,4 @@ Rails.application.routes.draw do
   post '/contact', to: "pages#create", as: :contact
   get '/google44f389a0657568f0.html', to: redirect('/google44f389a0657568f0.html')
   get '/contest_policy.pdf', to: redirect('/contest_policy.pdf')
-
-  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
